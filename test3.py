@@ -1,3 +1,2 @@
-print("it's ok?")
-# ok
-# macOS 收到
+def hello():
+    print("hello")
