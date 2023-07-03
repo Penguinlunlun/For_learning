@@ -1,5 +1,4 @@
-list = [1,12,3,45,6,6]
-list.sort(reverse=True)
-print(list)
+import test3
+test3.hello()
 
-
+test3.good()
