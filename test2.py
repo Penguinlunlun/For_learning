@@ -1,13 +1,20 @@
-list = [('apple', 25), ('orange', 10), ('fig', 12), ('apricot', 20)]
+import time
+import sys
 
-#用def來定義
-def by_name(item):
-    return item[0]
-def by_name_len(fu):
-    return len(fu[0])
-def by_price(fi):
-    return fi[1]
-    
-print(sorted(list, key=by_name))          #關鍵字參數key指定
-print(sorted(list, key=by_name_len))  
-print(sorted(list, key=by_price))
+def update_progress(progress):
+    bar_length = 50
+    filled_length = int(bar_length * progress)
+    bar = '=' * filled_length + '-' * (bar_length - filled_length)
+    percentage = int(progress * 100)
+    sys.stdout.write(f'\r[{bar}] {percentage}%')
+    sys.stdout.flush()
+
+# 模擬進度更新
+total_iterations = 100
+for i in range(total_iterations + 1):
+    progress = i / total_iterations
+    update_progress(progress)
+    time.sleep(0.1)
+
+
+

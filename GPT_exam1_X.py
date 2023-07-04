@@ -16,7 +16,7 @@
 
 
 # 以下是自解(失敗)
-while True:
+'''while True:
     try:
         input_list = ((input("輸入一個整數列表")))
         break
@@ -32,7 +32,7 @@ for i in range((len(input_list))+1,(len(input_list))-1):
 for b in range(len(my_list)):
     add = add + int(my_list[b])
 
-print(add)
+print(add)'''
 
 
 
@@ -47,7 +47,7 @@ while True:
 
 even_sum = 0
 for num in input_list:
-    if num % 2 == 0:  # 判斷是否為偶數
+    if num % 2 == 0: 
         even_sum += num
 
 print("所有偶數的總和為:", even_sum)
