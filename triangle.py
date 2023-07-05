@@ -21,3 +21,4 @@ def triangle():
         exit()
 
 triangle()
+

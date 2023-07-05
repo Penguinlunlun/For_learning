@@ -17,3 +17,4 @@ while True:
 
 sum = int(add_numbers(inputnum1,inputnum2))
 print('你輸入的數字相加後是:'+str(sum))
+

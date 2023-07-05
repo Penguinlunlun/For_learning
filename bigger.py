@@ -1,4 +1,4 @@
-'''def bigger():
+def bigger():
     while True:
         try:
             print('輸入兩個整數數字比大小')
@@ -24,7 +24,7 @@
         bigger()
     else:
         print("掰掰")
-        exit()'''
+        exit()
 
 def bigger():
     while True:
